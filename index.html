@@ -14,6 +14,7 @@
 	  color: hsla(0, 0%, 86%, 1);
 	  font-size: 2em;
 	}
+	
   	body {
 	  font-family: 'Oxygen Mono', Helvetica, Arial, 'Lucida Grande', sans-serif;
 	  color: hsla(0, 0%, 62%, 1);
@@ -21,22 +22,58 @@
 	  font-weight: 100;
 	  font-size: 1em;
 	}
+	
 	div {
 		width:500px;
+		z-index: 1;
 	}
+	
 	a {
 		color: hsla(360, 100%, 73%, 1);
 	}
+	
+	div #caption {
+		margin-top: -100px;
+		background-color: hsla(360, 100%, 73%, 1);
+		position: relative; width: 500px; height: 100px;
+	}
+
+	div #caption h1,h2 {
+		font-family: 'Montserrat';
+		padding: 10px;
+		color: hsla(0, 0%, 100%, 1);
+	}
+		
+	div #caption h1 {
+		text-align:left;float:left;
+		font-weight: 800;		
+		padding-left: 30px;		
+	}
+	
+	div #caption h2 {
+		padding-top: 18px;				
+		padding-right: 30px;		
+		text-align:right;float:right;
+		font-weight: 100;
+	}
+	
   </style>
   
   
   <body>
 	  <div id="music">
-	  <img src="images/Moku_Minaturen.png" />
+		  <div id="song">
+		  <img src="images/Miniaturen.png" />
+		  <div id="caption">
+		  	<h2>Miniaturen</h2>
+		  </div>
+		  </div>
+		  <!--iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/191146434&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe-->
 	  </div>
+	  
 	  <div id="about">
-	  <p>Thanks for stopping by. Moku is a tiny music project by Bernd Plontsch. Some synths, sometimes guitar, bass.</p>
-	  <p>By listening to the music you agree with the <a href="http://hood.ie/code-of-conduct/">Code of Conduct</a>. You’re welcome.</p>	  	
+	  <p>Thanks for stopping by. Moku is a tiny music project by Bernd Plontsch. Some synths, sometimes a guitar, basses.</p>
+	  <p>By listening to the music you agree with the <a href="code-of-conduct.html">Code of Conduct</a>. You’re welcome.</p>	  	
 	  </div>
 	  <div><a href="https://twitter.com/berndplontsch">Contact</a></div>
   </body>
